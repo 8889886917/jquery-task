@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Foding</title>
+	<script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+	<script>
+		$(document).ready(function() {
+      $("#show").click(function(){
+         $("#box").fadeIn(1000);
+      });
+      $("#hide").click(function(){
+         $("#box").fadeOut(1000);
+
+         $("h1").append("Some appended text.");
+		});
+    });
+	</script>
+</head>
+<body>
+   <h1>this is a jquery program</h1>
+	<p id="box">this is a jquery program</p>
+	<button id="hide">fadein</button>
+	<button id="show">fadeout</button>
+
+</body>
+</html>
